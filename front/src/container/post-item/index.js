@@ -41,7 +41,7 @@ export default function Container({ id, username, text, date }) {
     dispatch({
       type: REQUEST_ACTION_TYPE.PROGRESS,
     });
-    //setStatus(LOAD_STATUS.PROGRESS);
+    // setStatus(LOAD_STATUS.PROGRESS);
     try {
       const res = await fetch(
         `http://localhost:4000/post-item?id=${state.data.id}`
